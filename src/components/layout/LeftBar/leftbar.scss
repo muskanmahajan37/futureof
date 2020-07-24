@@ -1,0 +1,19 @@
+.left-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    height: 100vh;
+    background: radial-gradient(#1f1b2a, #131118);
+
+    .logo-wrapper {
+        position: relative;
+        top: 30px;
+        border-left: solid 5px #3a81bf;
+        padding: 10px 20px 5px 30px;
+
+        .logo-img {
+            width: 200px;
+        }
+    }
+}
