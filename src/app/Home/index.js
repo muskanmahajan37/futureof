@@ -1,14 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './home.scss';
 import {Link} from 'react-router-dom';
 import ICMenuBar from '../../components/icons/ICMenuBar';
 
 function Home() {
+  const [menuState, setMenuState] = useState(false);
+
   return (
     <div className="home">
-        <Link className="icon-menu" to={`login`}>
-            <ICMenuBar />
-        </Link>
+        <div className="nav-wrapper">
+          <a className="icon-menu" onClick={() => setMenuState(!menuState)}>
+              <ICMenuBar />
+          </a>
+          <div className={menuState ? "menu open" : "menu"}>
+            <div className="nav">
+              <Link className="nav-item" to={`/invitation-request`}>Invitation Requests</Link>
+              <Link className="nav-item" to={`/login`}>Login</Link>
+            </div>
+          </div>
+        </div>
         <div className="logo-wrapper">
             <img className="logo-img" src={require('../../assets/logo.png')} alt="logo" />
         </div>

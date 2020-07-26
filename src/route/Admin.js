@@ -15,7 +15,7 @@ import HostEvent from "../app/HostEvent";
 import InvitationRequests from "../app/InvitationRequests";
 
 export default function Admin() {
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
 
     return (
         <Router>
@@ -34,7 +34,10 @@ function GuestRoute() {
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
-                <Route path="/login">
+                <Route exact path="/invitation-request">
+                    <Login />
+                </Route>
+                <Route exact path="/login">
                     <Login />
                 </Route>
                 <Route path="/">
