@@ -22,9 +22,7 @@ export default function Admin() {
 
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
-            <Switch>
-                {isLogin ? <AdminRoute /> : <GuestRoute />}
-            </Switch>
+            {isLogin ? <AdminRoute /> : <GuestRoute />}
         </Router>
     );
 }
@@ -52,28 +50,26 @@ function AdminRoute() {
         <div className="app-main">
             <LeftBar />
             <div className="main">
-                <Router>
 
-                    {/* A <Switch> looks through its children <Route>s and
-                        renders the first one that matches the current URL. */}
-                    <Switch>
-                        <Route path="/invitation-requests" exact>
-                            <InvitationRequests />
-                        </Route>
-                        <Route path="/host-event" exact>
-                            <HostEvent />
-                        </Route>
-                        <Route path="/start-club" exact>
-                            <StartClub />
-                        </Route>
-                        <Route path="/login">
-                            <Login />
-                        </Route>
-                        <Route path="/">
-                            <Dashboard />
-                        </Route>
-                    </Switch>
-                </Router>
+                {/* A <Switch> looks through its children <Route>s and
+                    renders the first one that matches the current URL. */}
+                <Switch>
+                    <Route exact path="/invitation-requests">
+                        <InvitationRequests />
+                    </Route>
+                    <Route exact path="/host-event">
+                        <HostEvent />
+                    </Route>
+                    <Route exact path="/start-club">
+                        <StartClub />
+                    </Route>
+                    <Route exact path="/login">
+                        <Login />
+                    </Route>
+                    <Route exact path="/">
+                        <Dashboard />
+                    </Route>
+                </Switch>
             </div>
             <RightBar />
         </div>
