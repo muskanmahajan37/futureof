@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Switch from "react-switch";
 
 function HostEvent() {
-    const [step, setStep] = useState(2);
+    const [step, setStep] = useState(0);
     const [startDate, setStartDate] = useState( new Date() );
     const [btnDefaultImage, SetBtnDefaultImage] = useState(null);
     const [checked, setChecked] = useState(false);

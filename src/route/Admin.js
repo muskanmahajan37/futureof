@@ -54,16 +54,16 @@ function AdminRoute() {
                 {/* A <Switch> looks through its children <Route>s and
                     renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route exact path="/invitation-requests">
+                    <Route exact path="/admin/invitation-requests">
                         <InvitationRequests />
                     </Route>
-                    <Route exact path="/host-event">
+                    <Route exact path="/admin/host-event">
                         <HostEvent />
                     </Route>
-                    <Route exact path="/start-club">
+                    <Route exact path="/admin/start-club">
                         <StartClub />
                     </Route>
-                    <Route exact path="/login">
+                    <Route exact path="/admin/login">
                         <Login />
                     </Route>
                     <Route exact path="/">

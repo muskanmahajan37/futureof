@@ -21,16 +21,16 @@ function RightBar() {
         </div>
         <div className="nav-wrapper">
             <nav className="nav">
-                <Link className="nav-item" to={`/start-club`}>
+                <Link className="nav-item" to={`/admin/start-club`}>
                     START A CLUB
                 </Link>
-                <Link className="nav-item" to={`/host-event`}>
+                <Link className="nav-item" to={`/admin/host-event`}>
                     HOST EVENT
                 </Link>
-                <Link className="nav-item" to={`/invitation-requests`}>
+                <Link className="nav-item" to={`/admin/invitation-requests`}>
                     INVITATION REQUESTS
                 </Link>
-                <Link className="nav-item" to={`/logout`}>
+                <Link className="nav-item" to={`/admin/logout`}>
                     LOGOUT
                 </Link>
             </nav>
