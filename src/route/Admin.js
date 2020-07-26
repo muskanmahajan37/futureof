@@ -14,7 +14,7 @@ import StartClub from '../app/StartClub';
 import HostEvent from "../app/HostEvent";
 import InvitationRequests from "../app/InvitationRequests";
 import Club from "../app/Club";
-
+import MembershipRequest from "../app/MembershipRequest";
 
 export default function Admin() {
     const [isLogin, setIsLogin] = useState(false);
@@ -37,7 +37,7 @@ function GuestRoute() {
                 renders the first one that matches the current URL. */}
             <Switch>
                 <Route exact path="/invitation-request">
-                    <Login />
+                    <MembershipRequest />
                 </Route>
                 <Route exact path="/club">
                     <Club />
