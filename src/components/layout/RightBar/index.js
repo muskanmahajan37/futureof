@@ -24,7 +24,7 @@ function RightBar() {
                 <Link className="nav-item" to={`/start-club`}>
                     START A CLUB
                 </Link>
-                <Link className="nav-item" to={``}>
+                <Link className="nav-item" to={`/create-event`}>
                     HOST EVENT
                 </Link>
                 <Link className="nav-item" to={``}>
