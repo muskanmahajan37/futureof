@@ -21,7 +21,7 @@ function RightBar() {
         </div>
         <div className="nav-wrapper">
             <nav className="nav">
-                <Link className="nav-item" to={``}>
+                <Link className="nav-item" to={`/start-club`}>
                     START A CLUB
                 </Link>
                 <Link className="nav-item" to={``}>

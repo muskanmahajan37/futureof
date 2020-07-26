@@ -10,6 +10,7 @@ import Login from '../app/Auth/Login';
 import LeftBar from '../components/layout/LeftBar';
 import RightBar from '../components/layout/RightBar';
 import Dashboard from '../app/Dashboard';
+import StartClub from '../app/StartClub';
 
 export default function Admin() {
     const [isLogin, setIsLogin] = useState(true);
@@ -54,9 +55,9 @@ function AdminRoute() {
                     {/* A <Switch> looks through its children <Route>s and
                         renders the first one that matches the current URL. */}
                     <Switch>
-                        {/* <Route path="/about">
-                            <About />
-                        </Route> */}
+                        <Route path="/start-club" exact>
+                            <StartClub />
+                        </Route>
                         <Route path="/login">
                             <Login />
                         </Route>
