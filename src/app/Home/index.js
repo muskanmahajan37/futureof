@@ -14,7 +14,7 @@ function Home() {
           </a>
           <div className={menuState ? "menu open" : "menu"}>
             <div className="nav">
-              <Link className="nav-item" to={`/invitation-request`}>Invitation Requests</Link>
+              <Link className="nav-item" to={`/club`}>Club</Link>
               <Link className="nav-item" to={`/login`}>Login</Link>
             </div>
           </div>

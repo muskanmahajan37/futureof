@@ -13,6 +13,8 @@ import Dashboard from '../app/Dashboard';
 import StartClub from '../app/StartClub';
 import HostEvent from "../app/HostEvent";
 import InvitationRequests from "../app/InvitationRequests";
+import Club from "../app/Club";
+
 
 export default function Admin() {
     const [isLogin, setIsLogin] = useState(false);
@@ -29,13 +31,16 @@ export default function Admin() {
 
 function GuestRoute() {
     return (
-        <Router>
+        <div className="app-main">
 
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
                 <Route exact path="/invitation-request">
                     <Login />
+                </Route>
+                <Route exact path="/club">
+                    <Club />
                 </Route>
                 <Route exact path="/login">
                     <Login />
@@ -44,7 +49,7 @@ function GuestRoute() {
                     <Home />
                 </Route>
             </Switch>
-        </Router>
+        </div>
     )
 }
 
