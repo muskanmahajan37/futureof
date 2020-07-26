@@ -1,8 +1,22 @@
 .start-club {
-    position: relative;
-    padding: 100px;
+    // position: relative;
+
+    .content {
+        padding-top: 100px;
+    }
 
     .club-setup-form {
         max-width: 600px;
+    }
+
+    .btn {
+        min-width: 150px;
+    }
+
+    .badge {
+        position: relative;
+        top: -5px;
+        padding: 10px;
+        font-size: 18px;
     }
 }
