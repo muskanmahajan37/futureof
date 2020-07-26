@@ -24,13 +24,13 @@ function RightBar() {
                 <Link className="nav-item" to={`/start-club`}>
                     START A CLUB
                 </Link>
-                <Link className="nav-item" to={`/create-event`}>
+                <Link className="nav-item" to={`/host-event`}>
                     HOST EVENT
                 </Link>
-                <Link className="nav-item" to={``}>
+                <Link className="nav-item" to={`/invitation-requests`}>
                     INVITATION REQUESTS
                 </Link>
-                <Link className="nav-item" to={``}>
+                <Link className="nav-item" to={`/logout`}>
                     LOGOUT
                 </Link>
             </nav>

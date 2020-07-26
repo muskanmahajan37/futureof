@@ -11,7 +11,8 @@ import LeftBar from '../components/layout/LeftBar';
 import RightBar from '../components/layout/RightBar';
 import Dashboard from '../app/Dashboard';
 import StartClub from '../app/StartClub';
-import CreateEvent from "../app/CreateEvent";
+import HostEvent from "../app/HostEvent";
+import InvitationRequests from "../app/InvitationRequests";
 
 export default function Admin() {
     const [isLogin, setIsLogin] = useState(true);
@@ -56,8 +57,11 @@ function AdminRoute() {
                     {/* A <Switch> looks through its children <Route>s and
                         renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route path="/create-event" exact>
-                            <CreateEvent />
+                        <Route path="/invitation-requests" exact>
+                            <InvitationRequests />
+                        </Route>
+                        <Route path="/host-event" exact>
+                            <HostEvent />
                         </Route>
                         <Route path="/start-club" exact>
                             <StartClub />

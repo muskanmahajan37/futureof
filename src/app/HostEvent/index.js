@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import './create-event.scss';
+import './host-event.scss';
 
-function CreateEvent() {
+function HostEvent() {
     const [step, setStep] = useState(0);
 
   return (
-    <div className="create-event">
+    <div className="host-event">
         <div className="content">
             <form className="club-setup-form mx-auto">
                 <h4>CREATE EVENT</h4>
@@ -114,4 +114,4 @@ function CreateEvent() {
   );
 }
 
-export default CreateEvent;
+export default HostEvent;
