@@ -36,7 +36,10 @@ function RightBar() {
             </nav>
         </div>
         <div className="right-bar-info">
-            <h5 className="">Member Score:</h5>
+            <h5 className="d-flex">
+                Member Score:
+                <div className="circle-score-wrapper">456</div>
+            </h5>
             <p>Reach 1000 to become Silver Member</p>
             <h5 className="">Club Manager: </h5>
             <p>The Energy Club: 10 Members</p>

@@ -68,5 +68,41 @@
             font-weight: lighter;
             margin: 0;
         }
+        .circle-score-wrapper {
+            position: relative;
+            top: -20px;
+            left: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            padding-top: 15px;
+            text-align: center;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 60px;
+                bottom: 0px;
+                left: 0px;
+                border: solid 3px #3a81bf;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-right: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 30px;
+                bottom: 0px;
+                left: 0px;
+                border: solid 3px #3a81bf;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top: 0;
+            }
+        }
     }
 }
