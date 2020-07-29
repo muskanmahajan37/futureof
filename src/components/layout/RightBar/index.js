@@ -7,7 +7,7 @@ function RightBar() {
     <div className="right-bar">
         <div className="profile-wrapper">
             <div className="profile-img-wrapper">
-                <img className="profile-img" src={require('../../../assets/avatar/profile.png')} alt="profile image" />
+                <img className="profile-img" src={require('../../../assets/avatar/profile.png')} alt="profile" />
             </div>
             <div className="site-role">
                 BASIC MEMBER

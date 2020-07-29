@@ -9,9 +9,9 @@ function Home() {
   return (
     <div className="home">
         <div className="nav-wrapper">
-          <a className="icon-menu" onClick={() => setMenuState(!menuState)}>
+          <div className="icon-menu" onClick={() => setMenuState(!menuState)}>
               <ICMenuBar />
-          </a>
+          </div>
           <div className={menuState ? "menu open" : "menu"}>
             <div className="nav">
               <Link className="nav-item" to={`/club`}>Club</Link>

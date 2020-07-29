@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useHistory 
 } from "react-router-dom";
 
 import Home from '../app/Home';
@@ -17,7 +18,11 @@ import Club from "../app/Club";
 import MembershipRequest from "../app/MembershipRequest";
 
 export default function Admin() {
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(localStorage.getItem('isLogin') || false);
+
+    useEffect(() => {
+        setIsLogin(localStorage.getItem('isLogin') || false);
+    }, [isLogin]);
 
     return (
         <Router>
@@ -74,6 +79,9 @@ function AdminRoute() {
                     <Route exact path="/admin/login">
                         <Login />
                     </Route>
+                    <Route exact path="/admin/logout">
+                        <Logout />
+                    </Route>
                     <Route exact path="/">
                         <Dashboard />
                     </Route>
@@ -81,5 +89,17 @@ function AdminRoute() {
             </div>
             <RightBar />
         </div>
+    )
+}
+
+function Logout() {
+    const history = useHistory();
+    useEffect(() => {
+        localStorage.clear();
+        history.push('/');
+        window.location.reload();
+    })
+    return (
+        <div className="logout"></div>
     )
 }
