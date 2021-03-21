@@ -1,4 +1,8 @@
+# FUTUREOF
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Screenshot
+![FutureOf React App](Screenshot.png)
 
 ## Environment
 node version: v12.18.3
